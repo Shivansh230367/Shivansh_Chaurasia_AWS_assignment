@@ -1,1 +1,0 @@
-# Shivansh_Chaurasia_AWS_assignment
