@@ -77,4 +77,11 @@
   * Prevents overlap and ensures clean routing.
 
   * Subnets are placed across two Availability Zones to support Multi-AZ deployments and fault tolerance.
+![task_1-1](https://github.com/user-attachments/assets/e9040467-3238-4237-9844-588f85135777)
+![task_1-2](https://github.com/user-attachments/assets/396148a6-bdff-424f-9e6d-d9c9439b397d)
+![task_1-3](https://github.com/user-attachments/assets/a6e88ee4-bdba-4ca0-becd-263f01b5f4e6)
+![task_1-4](https://github.com/user-attachments/assets/148312cf-8297-414f-95b1-9054ac45a1e9)
+![task_1-5](https://github.com/user-attachments/assets/18e1d999-4e84-4553-a9de-516aff3f7466)
+![task_1-6](https://github.com/user-attachments/assets/c1bc2c3f-21fe-4f3d-9b40-d4e19bec2bcb)
+![task_1-7](https://github.com/user-attachments/assets/188bebda-13e3-4527-a7b1-8b70d876ce07)
 
