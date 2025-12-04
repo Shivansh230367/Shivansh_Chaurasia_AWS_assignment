@@ -1,5 +1,3 @@
-// question1/main.tf
-// CHANGE: Replace highlighted tokens below before running
 terraform {
   required_providers {
     aws = {
@@ -15,21 +13,20 @@ provider "aws" {
 
 variable "aws_region" {
   type    = string
-  default = "us-east-1" // <span style="color:red">REPLACE_ME_REGION</span>
+  default = "us-east-1" 
 }
 
 variable "resource_prefix" {
   type    = string
-  default = "Shivansh_Chaurasia" // <span style="color:red">REPLACE_ME_PREFIX</span>
+  default = "Shivansh_Chaurasia" 
 }
 
-# VPC
+
 resource "aws_vpc" "this" {
   cidr_block = "10.0.0.0/16"
   tags       = { Name = "${var.resource_prefix}_vpc" }
 }
 
-# Internet Gateway
 resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.this.id
   tags   = { Name = "${var.resource_prefix}_igw" }
@@ -37,7 +34,6 @@ resource "aws_internet_gateway" "igw" {
 
 data "aws_availability_zones" "available" {}
 
-# Public subnets
 resource "aws_subnet" "public_a" {
   vpc_id                  = aws_vpc.this.id
   cidr_block              = "10.0.1.0/24" # PUBLIC A
@@ -54,7 +50,6 @@ resource "aws_subnet" "public_b" {
   tags                    = { Name = "${var.resource_prefix}_public_b" }
 }
 
-# Private subnets
 resource "aws_subnet" "private_a" {
   vpc_id            = aws_vpc.this.id
   cidr_block        = "10.0.101.0/24" # PRIVATE A
@@ -69,7 +64,6 @@ resource "aws_subnet" "private_b" {
   tags              = { Name = "${var.resource_prefix}_private_b" }
 }
 
-# Public route table -> IGW
 resource "aws_route_table" "public" {
   vpc_id = aws_vpc.this.id
   route {
@@ -89,7 +83,6 @@ resource "aws_route_table_association" "public_b" {
   route_table_id = aws_route_table.public.id
 }
 
-# NAT Gateway (NOTE: NAT Gateway costs money)
 resource "aws_eip" "nat" {
   vpc  = true
   tags = { Name = "${var.resource_prefix}_nat_eip" }
@@ -101,7 +94,6 @@ resource "aws_nat_gateway" "nat" {
   tags          = { Name = "${var.resource_prefix}_nat" }
 }
 
-# Private route table -> NAT GW
 resource "aws_route_table" "private" {
   vpc_id = aws_vpc.this.id
   route {
@@ -124,3 +116,4 @@ resource "aws_route_table_association" "private_b" {
 output "vpc_id" {
   value = aws_vpc.this.id
 }
+
