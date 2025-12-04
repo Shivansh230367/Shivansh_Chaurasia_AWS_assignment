@@ -1,4 +1,4 @@
-
+# Task-2 Documentation
 # Explanation of Instance Setup, Nginx Installation & Hardening Steps
 
 ## 1. EC2 Instance Setup
