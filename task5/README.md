@@ -1,3 +1,6 @@
+
+<img width="901" height="891" alt="AWS_architecture_shivansh drawio" src="https://github.com/user-attachments/assets/ce783ff8-5193-4759-aa76-68e40d7c0fca" />
+
 # Task-5 Documentation
 
 ## Architecture Explanation
