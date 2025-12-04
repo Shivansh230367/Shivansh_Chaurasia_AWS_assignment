@@ -36,3 +36,12 @@
 4. Target Group routes to EC2 instances in private subnets.
 5. Nginx on EC2 returns HTML response.
 6. Response flows back through ALB to the user.
+![task_3-1](https://github.com/user-attachments/assets/b0a04d5f-4fb4-41bd-9a00-5e2de2e1016e)
+![task_3-2](https://github.com/user-attachments/assets/f6d05cfb-a549-4184-832d-5792190be0e4)
+
+![task_3-3](https://github.com/user-attachments/assets/3d0f0f9e-e9a3-4c91-8685-d40a22fb799e)
+
+![task_3-4](https://github.com/user-attachments/assets/1e07f3ef-89bf-4d92-87e9-52f785a2404e)
+![task_3-5](https://github.com/user-attachments/assets/2962c376-7929-4014-9fb3-c1a17026e55a)
+![task_3-6](https://github.com/user-attachments/assets/4e62d2ee-5f9d-4c8e-9aee-929b32356cac)
+
